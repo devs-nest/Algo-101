@@ -67,6 +67,8 @@ def dfs():
             if !visited[connected_node]:
                 s.push(connected_node)
 
+
+front 5,dx  4,dy 2 1 4 back
     def bfs():
         queue < int > s;
         q.push(4);
@@ -78,3 +80,69 @@ def dfs():
                 if !visited[connected_node]:
                     q.push(connected_node)
 
+
+
+vector< int, vector< pair< int, int > > >graph;
+map<int, vector<int> >graph;
+hashMap
+dict
+list
+
+
+N 5
+M 7
+A B W
+1 2 10
+2 3 12
+3 4 7
+4 5 8
+2 4 6
+2 5 5
+1 5 7
+
+1 (2, 10)  (5,7)
+2 (1,10) (3,12) (4,6) (5,5)
+3 (2,12) (4,7)
+4 (2,6) (3,7) (5,8)
+5 (1,7) (2,6) (4,8)
+
+
+def bfs():
+    priority_queue < pair<int, int> > pq;
+    pq.push(4);
+    while queue is not empty:
+        current_node = q.top()
+        s.pop()
+        for i in range(graph[current_node]):
+            connected_node = graph[current_node][i];
+                q.push(connected_node)
+
+s,
+
+a
+
+dist[a] > dist[previous node] + w
+
+ll dist[MAXN + 1];
+
+void dijkstra(int v)
+{
+	dist[v] = 0;
+	int u;
+	priority_queue<ii, vii, less<ii> > > pq;
+	pq.push(ii(dist[v], v));
+	while(!pq.empty())
+	{
+		u = pq.top().second;
+		pq.pop();
+		forp(i, 0, graph[u].size())
+		{
+			ii p = graph[u][i]
+			if(dist[p.first] > dist[u] + p.second) #if previous[currentnode] > new distance + weight of edge
+			{
+				d[p.first] = d[u] + p.second;
+				pq.push(ii(d[p.first], p.first));
+			}
+		}
+	}
+}
