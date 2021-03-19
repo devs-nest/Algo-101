@@ -4,10 +4,10 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to two sum in java is provided [here](..blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](..blob/master/2021/day1/two-sum/TwoSumPython.py)
-2. The editorial to buy and sell a stock in java is provided [here]() and python is provided [here]()
+1. The editorial to two sum in java is provided [here](../blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](../blob/master/2021/day1/two-sum/TwoSumPython.py)
+2. The editorial to buy and sell a stock in java is provided [here](../blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.java) and python is provided [here](../blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [contains duplicates](https://leetcode.com/problems/contains-duplicate/) in java is provided [here](blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](..blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
-2. The editorial to [valid anagram](https://leetcode.com/problems/valid-anagram/) in java is provided [here](..blob/master/2021/day1/valid-anagram/ValidAnagram.java) and in python is provided [here](..blob/master/2021/day1/valid-anagram/ValidAnagram.py)
+1. The editorial to [contains duplicates](https://leetcode.com/problems/contains-duplicate/) in java is provided [here](../blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](../blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
+2. The editorial to [valid anagram](https://leetcode.com/problems/valid-anagram/) in java is provided [here](../blob/master/2021/day1/valid-anagram/ValidAnagram.java) and in python is provided [here](../blob/master/2021/day1/valid-anagram/ValidAnagram.py)
