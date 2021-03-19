@@ -18,5 +18,5 @@ class TwoSumPython(object):
             if target - num in nummap:
                 return [nummap[target-num], i]
 
-            # In case, there is no pair then empty array is returned
             nummap[num]=i
+# If no pair is found, there is no pair then nothing is returned
