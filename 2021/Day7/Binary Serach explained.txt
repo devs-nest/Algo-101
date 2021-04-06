@@ -1,0 +1,263 @@
+    Median of 2 Sorted Arrays : 
+
+
+
+    case 1 : SAME SIZE (n)
+
+
+    A: 1 2 3 4 5
+    B: 2 4 6 8 10
+
+
+    we know that:
+    final[] : array after merging these 2 sorted arrays
+    final array size : 2n
+
+    median  = (final[n-1]+final[n])/2
+
+
+
+    > brute force method: merge these using 2pointer method and find the median:
+
+    time : O(n)
+    space : O(n)
+
+
+    > efficient O(logn) time O(1) space solution:
+
+    lets say our array has n elemenents where n = 2k + 1 so if the middle element is called as midA, midB we can make the arrays like
+
+
+    A : [LA ..........(k ELEMENTS) ] MIDA [ ..... (K ELEMENTS).. RA]
+    B : [LB ..........(k ELEMENTS) ] MIDB [ ..... (K ELEMENTS).. RB]
+
+
+if MIDA == MIDB:
+	median = MIDA
+
+if RA < LB:
+	median = (RA+LB)/2
+if RB < LA:
+	median = (RB+LA)/2
+
+if n == 2: // base condition
+	median = [max(A[0], B[0]) + min(A[1], B[1])]/2
+
+
+
+if MIDA > MIDB:
+	this means median lies in [LA to MIDA] and [MIDB to RB]
+else:
+	this means median lies in [LB to MIDB] and [MIDA to RA]
+
+by this we can recursively deduce the problem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HAEvi  coder sawal : 
+
+A and B are of different sizes (nA, nB)
+
+
+:)
+
+
+
+
+
+
+
+
+
+now final array will have : nA + nB elements
+
+lets say nA + nB is even = N
+
+this means in final array we will have a partition which has n/2 elements on left of it and right of it
+
+[some elements from A and B from begining] |p| [rest of the elements of A and B]
+
+
+
+in 2 arrays we can make separate partitions PA and PB
+
+
+..LA...... |PA| ......RA..........
+....LB................. |PB| ....RB..........
+
+
+where:
+number of terms : LA + LB = RA + RB = N/2
+
+
+
+
+
+
+
+
+if number of terms in LA = x
+then
+	number of terms RA = nA - x
+	number of terms LB = N/2 - x
+	number of terms RB = m - (N/2 - x)
+
+
+
+
+
+
+
+
+if PA and PB are found :
+	median  = [max(LA[-1], LB[-1]) + min(RA[0], RB[0])]/2
+
+how PA , PB are defined on following conditions:
+	LA + LB = RA + RB = N/2
+c1	LA[-1] < RB[0]
+c2	LB[-1] < RA[0]
+
+
+
+
+
+now to define a partition all we need is to find size of LA : X
+
+assume x = nA/2
+
+if c1 and c2 are met :
+	PA PB are found median can be returned
+
+if c1 is not met : 
+	x belongs to LA 
+	x new value : LA/2
+
+if c2 is not met : 
+	x belongs to RA
+	x new value : RA/2
+
+
+
+can c1 and c2 both be not met ? ? ? ? ? ? ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def findMedian(a, b) :
+
+    median, i, j, n, m = 0, 0, 0, len(a), len(b)
+    min_index = 0
+    max_index = n
+
+    while (min_index <= max_index) :
+
+        i = int((min_index + max_index) / 2)
+        j = int(((n + m + 1) / 2) - i)
+
+
+
+        if (i < n and j > 0 and b[j - 1] > a[i]) :
+            min_index = i + 1
+
+
+        elif (i > 0 and j < m and b[j] < a[i - 1]) :
+            max_index = i - 1
+
+
+        else :
+
+
+            if (i == 0) :
+                median = b[j - 1]
+            elif (j == 0) :
+                median = a[i - 1]
+            else :
+                median = max(a[i - 1], b[j - 1])
+            break
+
+
+
+    if ((n + m) % 2 == 1) :
+        return median
+
+    if (i == n) :
+        return ((median + b[j]) / 2.0)
+
+    if (j == m) :
+        return ((median + a[i]) / 2.0)
+
+    return ((median + min(a[i], b[j])) / 2.0)
+
+
+
+
+
+
+a = [832]
+b = [5, 13, 14]
+if (len(a) < len(b)) :
+    print (findMedian(a, b))
+else :
+    print (findMedian(b, a))
