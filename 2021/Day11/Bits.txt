@@ -1,0 +1,62 @@
+2 00000010
+3 00000011
+--------------
+5 00000101
+
+1 + 1 = 10
+1+0 = 0+1 = 1
+0+0 = 0
+
+sum = a^b
+carry = (a&b)<<1
+
+def getSum(a, b):
+	if b == 0: return a
+	return getSum(a ^ b, (a & b) << 1)
+
+lets say integers are 32 bit long:
+
+this means biggest integer can be 0b11111111111111111111111111111111
+and smallest can be 0
+
+but in this range we have not stored negative numbers
+
+to account for -ve numbers we use right most bit to store that info:
+0 : +ve
+1 : -ve number
+
+ans the rest of the 31 bits make the number
+
+this means accounting for -ve numbers, biggest number is 0b01111111111111111111111111111111
+
+-ve numbers are stored in memory with 2s compliment:
+
+ 4: 00000100
+-4: 11111011 
+
+
+in bitwise operations we need define how many bits we re going to operate upon and beyond that if the number overflows we will dicard it.
+
+now python can store much bigger numbers but if we need to dicard any bit > 32nd bit will will use our mask to discard those
+
+mask = 0b11111111111111111111111111111111
+x & mask = x with only last 32 bits. rest discarded
+
+if x <= max : positive
+else : negative
+
+but python doesnt know 32 bits is the limit for binary integers to be stored. it still sees the ones we defined as negative as positive
+
+so if we know x is negative : we need to return ~(x^mask) which is 2s compliment of x considering only last 32 bits.
+
+
+mask = 0b11111111111111111111111111111111       
+MAX =  0b01111111111111111111111111111111
+
+if b == 0:
+    return a if a <= MAX else ~(mask^a)
+
+return self.getSum(
+    mask & (a^b),
+    mask & ((a & b) << 1)
+)
