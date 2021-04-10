@@ -1,6 +1,6 @@
 # Day 1 Solutions
 
-These folders contain solutions to leetcode questions explained by Kshitiz Miglani on [Devsnest Channel](https://www.youtube.com/channel/UCkxqJvZRzhM0oaBjbu3ZjFg). [Two sum](https://leetcode.com/problems/two-sum/) and [best time to buy and sell a stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) has been explained in his DSA course on arrays in [Day 1 video](https://www.youtube.com/watch?v=OSQk34Rtgx0&t=448s).
+These folders contain solutions to leetcode questions explained by Kshitiz Miglani on [Devsnest Channel](https://www.youtube.com/channel/UCkxqJvZRzhM0oaBjbu3ZjFg). [Two sum](https://leetcode.com/problems/two-sum/) and [best time to buy and sell a stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) has been explained in his DSA course on arrays in [Day 1 video](https://www.youtube.com/watch?v=OSQk34Rtgx0&t=448s). 
 
 ## Class Questions Editorial
 
