@@ -14,6 +14,6 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 1. [Next Greater Element-1](https://leetcode.com/problems/next-greater-element-i/) 
    1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day6/Next%20Greater%20Element%201/Next_greater_element_1.cpp) 
    2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day6/Next%20Greater%20Element%201/Next_greater_element_1.py)
-2. [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/)
+<!-- 2. [Trapping Rainwater](https://leetcode.com/problems/trapping-rain-water/)
    1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.java) 
-   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.py)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.py) -->

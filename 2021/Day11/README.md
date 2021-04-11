@@ -4,10 +4,18 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to Sum Of Two Integers in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumPython.py)
-2. The editorial to Missing Number in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.java) and python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.py)
+1. [Sum Of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Sum%20of%20Two%20Integers/Sum%20of%20Two%20Integers.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Sum%20of%20Two%20Integers/Sum%20of%20Two%20Integers.py)
+2. [Missing Number](https://leetcode.com/problems/missing-number/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Missing%20Number/Missing%20Number.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Missing%20Number/Missing%20Number.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
-2. The editorial to [Counting Bits](https://leetcode.com/problems/counting-bits/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.py)
+1. [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Number%20of%201%20Bits/Number%20of%201%20Bits.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Number%20of%201%20Bits/Number%20of%201%20Bits.py)
+2. [Counting Bits](https://leetcode.com/problems/counting-bits/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Counting%20Bits/Counting%20Bits.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Counting%20Bits/Counting%20Bits.py)
