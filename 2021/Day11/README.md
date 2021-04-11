@@ -18,4 +18,4 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
    2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Number%20of%201%20Bits/Number%20of%201%20Bits.py)
 2. [Counting Bits](https://leetcode.com/problems/counting-bits/)
    1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Counting%20Bits/Counting%20Bits.cpp)
-   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Counting%20Bits/Counting%20Bits.py)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day11/Counting%20Bits/Counting%20Bits.py) 
