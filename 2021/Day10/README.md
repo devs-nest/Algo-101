@@ -4,8 +4,12 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to Subsets in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumPython.py)
+1. [Subsets](https://leetcode.com/problems/subsets/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day10/Subsets/subsets.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day10/Subsets/subsets.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [Subsets-2](https://leetcode.com/problems/subsets-ii/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
+1. [Subsets-2](https://leetcode.com/problems/subsets-ii/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day10/Subsets2/subsets2.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day10/Subsets2/subsets2.py)

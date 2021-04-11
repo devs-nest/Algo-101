@@ -4,10 +4,18 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to Container With Most Water in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumPython.py)
-2. The editorial to Merge Intervals in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.java) and python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.py)
+1. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Container%20with%20most%20water/container_with_most_water.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Container%20with%20most%20water/container_with_most_water.py)
+2. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Merge%20Intervals/Merge_intervals.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Merge%20Intervals/Merge_intervals.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [Non Overlaping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
-2. The editorial to [Insert Interval](https://leetcode.com/problems/insert-interval/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.py)
+1. [Non Overlaping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) 
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Non%20overlapping%20intervals/non_overlapping_intervals.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Non%20overlapping%20intervals/non_overlapping_intervals.py)
+2. [Insert Interval](https://leetcode.com/problems/insert-interval/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Merge%20Intervals/Merge_intervals.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day4/Merge%20Intervals/Merge_intervals.py)

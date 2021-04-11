@@ -4,9 +4,15 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to Valid Anagram in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumPython.py)
-2. The editorial to Valid Palindrome-2 in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.java) and python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.py)
+1. [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Valid%20Anagram/valid_anagram.cpp) 
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Valid%20Anagram/valid_anagram.py)
+2. [Valid Palindrome-2](https://leetcode.com/problems/valid-palindrome-ii/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Valid%20palindrome%202/valid_palindrome_2.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Valid%20palindrome%202/valid_palindrome_2.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [Group Anagrams](https://leetcode.com/problems/group-anagrams/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
+1. [Group Anagrams](https://leetcode.com/problems/group-anagrams/) 
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Group%20Anagrams/Group_anagrams.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day9/Group%20Anagrams/Group_anagrams.py)

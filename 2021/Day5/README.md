@@ -4,10 +4,18 @@ These folders contain solutions to leetcode questions explained by Kshitiz Migla
 
 ## Class Questions Editorial
 
-1. The editorial to Set Matrix Zeroes in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumJava.java) and to python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/two-sum/TwoSumPython.py)
-2. The editorial to Rotate Image in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.java) and python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/best-time-to-buy-and-sell-stock/BuySellStock.py)
+1. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Set%20Matrix%20zeroes/set_matrix_zeroes.cpp) 
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Set%20Matrix%20zeroes/set_matrix_zeroes.py)
+2. [Rotate Image](https://leetcode.com/problems/rotate-image/)
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Rotate%20Image/Rotate_image.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Rotate%20Image/Rotate_image.py)
 
 ## Assignment Questions Editorial
 
-1. The editorial to [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicate.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/contains-duplicate/ContainsDuplicates.py)
-2. The editorial to [Word Search](https://leetcode.com/problems/word-search/) in java is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.java) and in python is provided [here](https://github.com/devs-nest/Algo-101/blob/master/2021/day1/valid-anagram/ValidAnagram.py)
+1. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) 
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Spiral%20Matrix/spiral_matrix.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Spiral%20Matrix/spiral_matrix.py)
+2. [Word Search](https://leetcode.com/problems/word-search/) 
+   1. [CPP](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Word%20Search/Word_search.cpp)
+   2. [Python](https://github.com/devs-nest/Algo-101/blob/master/2021/Day5/Word%20Search/Word_search.py)
