@@ -1,0 +1,217 @@
+Dijkstra's Algorithm:
+
+Single Source Shortest Path :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pre-requiste:
+	+ve weights only
+
+
+
+
+
+
+
+
+
+Reasoning:
+
+1. if src and destination are same then dist is 0. dist[x][x] is always 0 . that means even though we dont know anything about the distance from Src we we know that 
+	
+	Dist[Src] = 0 which is its absolute shortest distance. 
+
+	for all other nodes X we have dist[X] = infinity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. if dist[x] = dx & dis[y] = dy and we discover edge[x][y] = p such that 
+	
+	dy > dx + p 
+
+	then we can say dist[y] = dx + p . or we can say
+
+    dist[y] = min(dist[y], dist[x] + edge[x][y]) for all nodes x which have an edge to y
+
+   	This can be updated from every node x that we visit
+
+
+
+
+
+
+
+
+
+
+
+3. We only visit the nodes for which we know we have calculated the absolute shortest path (which will now not be updated).
+
+	from start we know only for src we have absolute shortest path which is Dist[Src] = 0 and it can not be updated since all edges have +ve weight.
+
+
+
+
+
+
+
+
+
+
+
+
+4. if in a graph we have 
+	some nodes A , B , C for which we have found the absolute shortest paths . 
+
+	And for rest of the nodes D, E, F we have some paths (no path is a path with weight infinity)
+
+	at this point we will say the node in D, E, F which has min dist value has its shortest path found and no other path after this which we might find can be shorter
+
+
+	proof:
+
+
+		lets say dist[D] < Dist[E] , Dist[F]  - eq A
+
+		for a smaller path to be introduced to D via E the following will have to be true
+
+		Dist[D] > Dist[E] + W      // W = cumilative weight of a new path from E to D
+
+		but from eq A , this can only be true if W < 0 which is false (under pre-requisites)
+
+
+		(for E we can still say it is possible that Dist[E] > dist[D] + W where W can be > 0 because Dist[D] < Dist[E] . but not the other way) 
+
+
+		same for F also
+
+
+
+		=> dist[D] now is the absolute shortest path
+
+	so now we say we have 4 nodes A, B, C, D for which we know absolute shortest path 
+
+	E, F are still not completely explored .
+
+	at this point we will visit D and update all the adjecent nodes by point(2) explained above
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+algo : 
+1.  mark dist[src] = 0
+	for all other nodes x dist[x] = inf
+	for all nodes x visted[x] = false
+
+2.  while there is any node not vistied : // that is while there exists any node x for which visited[x] == False
+
+		x = the node with min dist[x] amongst the nodes which are not visited
+		visited[x] = True
+
+		for all nodes p which are having an edge from x to p and visited[p] is False:
+			dist[p] = min(dist[p], dist[x] + adj[x][p])
+
+
+
+
+Q: why dont we use a min heap instead of visited and dist to find min weight edge ??
+
+
+
+
+
+
+
+
+
+
+
+
+code:
+
+
+
+adj =  [[0, 40, 0, 50, 0, 0],
+        [0, 0, 30, 0, 0, 0],
+        [0, 0, 0, 0, 20, 50],
+        [0, 0, 10, 0, 40, 0],
+        [0, 0, 0, 0, 0, 10],
+        [0, 0, 0, 0, 0, 0]]
+
+# we can also show no edge by -1
+
+v = len(adj)
+inf = 999999999999999999
+dist = [inf]*v
+dist[0] = 0
+visited = [False]*v
+
+
+
+for i in range(v):
+    mindist = inf
+    x = -1
+
+    for j in range(v):
+        if not visited[j] and dist[j] < mindist:
+            x = j
+            mindist = dist[j]
+
+    visited[x] = True
+
+    for j in range(v):
+        if not visited[j] and adj[x][j] > 0:
+            dist[j] = min(dist[j], dist[x] + adj[x][j])
+
+print(dist)
+
+
+output:
+[0, 40, 60, 50, 80, 90]
+
+
+time complexity:  v^2
