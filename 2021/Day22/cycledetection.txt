@@ -1,0 +1,55 @@
+adj =  [[0, 1, 0, 0, 0, 1, 0],
+        [0, 0, 1, 0, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 1],
+        [0, 0, 0, 1, 0, 0, 0]]
+
+
+def print_dfs(adj, curr, visited):
+    if curr in visited:
+        return
+    print(curr)
+    visited.add(curr)
+    for j in range(len(adj[0])):
+        if adj[curr][j]==1:
+            print_dfs(adj, j, visited)
+
+def print_bfs(adj, curr):
+    q = [curr]
+    visited = set([curr])
+    while len(q)>0:
+        c = q.pop(0)
+        print(c)
+        for j in range(len(adj[0])):
+            if adj[c][j] == 1 and j not in visited:
+                visited.add(j)
+                q.append(j)
+
+def detect_cycle_in_undirected_graph(adj):
+    q = [0]
+    visited = set([0])
+    while len(q) > 0:
+        c = q.pop(0)
+        # print(c)
+        for j in range(len(adj[0])):
+            if adj[c][j] == 1:
+                if j not in visited:
+                    print(c,j)
+                    visited.add(j)
+                    q.append(j)
+                else:
+                    print("found cycle at node ",c, j)
+                    return True
+    print("no cycle")
+    return False
+
+
+detect_cycle_in_undirected_graph(adj)
+
+
+
+# print_dfs(adj, 0, set())
+# print("----")
+# print_bfs(adj, 0)
